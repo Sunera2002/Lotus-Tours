@@ -1,0 +1,90 @@
+body {
+	font-family: "Poppins";
+	background-color: #EAF2F8;		
+}
+
+.navbar{
+    background-color: lightslategray;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	height: 60px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding-left: 0%;
+}
+
+.navbar img{
+	padding-right: 650px;
+}
+.navbar a {
+    float: right;
+	display: block;
+	color: #f2f2f2;
+	text-align: right;
+	padding: 14px 10px;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: border-bottom 0.3s ease-in-out;
+	font-size: 19px;
+}
+/*change the color of the link on hover*/
+.navbar a:hover{
+	background-color: #5DADE2;
+	color:#000;
+}
+/* Add a background color to the active/current link */
+.navbar a.active {
+	background-color: #2874A6;
+	color: #fff;
+}
+/*background color for whole website*/
+body{
+	background-color: #EAF2F8;	
+}
+/* main heading*/
+h1{
+    color: #2874A6;
+	font-size : 75px;
+    text-align: center;
+}    
+h2{
+    color: #2E86C1;
+	font-size: 50px;
+    text-align: center;
+}
+p{
+    color:#000;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    float: left;
+}
+
+.container {
+    display: flex; /* set the display to flex to align items */
+    align-items: center; /* align items vertically center */
+    border: 1px solid #2874A6; /* apply border */
+    border-radius: 5px;
+    padding: 10px; /* add padding for spacing */
+    margin: 10px;
+  }
+  
+  img {
+    width: 300px; /* set image width */
+    height: auto; /* set image height to maintain aspect ratio */
+    margin-right: 20px; /* add margin for spacing between image and text */
+  }
+  
+  .text {
+    flex: 1; /* set flex to 1 to take up remaining space */
+  }
+  
+  h2 {
+    margin: 0; /* remove default margin from heading */
+  }

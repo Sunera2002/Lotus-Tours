@@ -1,0 +1,208 @@
+body {
+    background-color: #D4F1F4;
+}
+
+
+.pl {
+    padding: 1rem;
+    margin: auto;
+    display: block;
+    width: 9.375em;
+    height: 9.375em;
+  }
+  
+  .pl__arrows,
+  .pl__ring-rotate,
+  .pl__ring-stroke,
+  .pl__tick {
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .pl__arrows {
+    animation-name: arrows42;
+    transform: rotate(45deg);
+    transform-origin: 16px 52px;
+  }
+  
+  .pl__ring-rotate,
+  .pl__ring-stroke {
+    transform-origin: 80px 80px;
+  }
+  
+  .pl__ring-rotate {
+    animation-name: ringRotate42;
+  }
+  
+  .pl__ring-stroke {
+    animation-name: ringStroke42;
+    transform: rotate(-45deg);
+  }
+  
+  .pl__tick {
+    animation-name: tick42;
+  }
+  
+  .pl__tick:nth-child(2) {
+    animation-delay: -1.75s;
+  }
+  
+  .pl__tick:nth-child(3) {
+    animation-delay: -1.5s;
+  }
+  
+  .pl__tick:nth-child(4) {
+    animation-delay: -1.25s;
+  }
+  
+  .pl__tick:nth-child(5) {
+    animation-delay: -1s;
+  }
+  
+  .pl__tick:nth-child(6) {
+    animation-delay: -0.75s;
+  }
+  
+  .pl__tick:nth-child(7) {
+    animation-delay: -0.5s;
+  }
+  
+  .pl__tick:nth-child(8) {
+    animation-delay: -0.25s;
+  }
+  
+  /* Animations */
+  @keyframes arrows42 {
+    from {
+      transform: rotate(45deg);
+    }
+  
+    to {
+      transform: rotate(405deg);
+    }
+  }
+  
+  @keyframes ringRotate42 {
+    from {
+      transform: rotate(0);
+    }
+  
+    to {
+      transform: rotate(720deg);
+    }
+  }
+  
+  @keyframes ringStroke42 {
+    from,
+      to {
+      stroke-dashoffset: 452;
+      transform: rotate(-45deg);
+    }
+  
+    50% {
+      stroke-dashoffset: 169.5;
+      transform: rotate(-180deg);
+    }
+  }
+  
+  @keyframes tick42 {
+    from,
+      3%,
+      47%,
+      to {
+      stroke-dashoffset: -12;
+    }
+  
+    14%,
+      36% {
+      stroke-dashoffset: 0;
+    }
+  }
+
+.loader {
+  color: rgb(3, 3, 44);
+  font-family: "Poppins",sans-serif;
+  font-weight: 500;
+  font-size: 1.563rem;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+  padding-left: 42rem;
+}
+
+.loading{
+  font-size: 21px;
+}
+
+.words {
+  overflow: hidden;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: #0F52BA;
+  animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+  10% {
+    -webkit-transform: translateY(-70%);
+    transform: translateY(-70%);
+  }
+
+  25% {
+    -webkit-transform: translateY(-65%);
+    transform: translateY(-65%);
+  }
+
+  35% {
+    -webkit-transform: translateY(-170%);
+    transform: translateY(-170%);
+  }
+
+  50% {
+    -webkit-transform: translateY(-165%);
+    transform: translateY(-165%);
+  }
+
+  60% {
+    -webkit-transform: translateY(-270%);
+    transform: translateY(-270%);
+  }
+
+  75% {
+    -webkit-transform: translateY(-265%);
+    transform: translateY(-265%);
+  }
+
+  85% {
+    -webkit-transform: translateY(-370%);
+    transform: translateY(-370%);
+  }
+
+  100% {
+    -webkit-transform: translateY(-365%);
+    transform: translateY(-365%);
+  }
+}
+
+.namelist {
+  padding-top: 4.063rem;
+}
+
+ul {
+  color: #0F52BA;
+  list-style-type: none;
+  font-family: "Poppins",sans-serif;
+  font-size: 1.8rem;
+  float:left;
+  margin:0 11.25rem;
+}
